@@ -26,7 +26,7 @@
   ?>
 </head>
 <body>
-  <div class="container pt-4">
+  <div class="container p-3">
     <?php
       $found_count = 0;
       if (isset($_POST['submit'])) {

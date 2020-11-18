@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-<div class="container">
+<div class="container p-3">
     <div class="row">
     <?php
       $spotify = file_get_contents('https://dd-wtlab2020.netlify.app/pre-final/ezquiz.json');
@@ -21,7 +21,7 @@
         <div class="card h-100">
           <img class="card-img-top" src="<?php echo $music->album->images[0]->url; ?>">
           <div class="card-body">
-            <h5 class="card-title"><?php echo $music->album->name;; ?></h5>
+            <h5 class="card-title"><?php echo $music->album->name; ?></h5>
           <?php
             echo "<p class='card-text mb-1'>Artist : ";
             foreach ($music->album->artists as $artists) {
